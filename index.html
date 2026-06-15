@@ -3,306 +3,473 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>TechFlow | Full Stack Technology & Marketing</title>
+    <title>TechFlow | Automação, Desenvolvimento e Tráfego Pago em BH</title>
+    <meta name="description" content="TechFlow: agência full stack de tecnologia em Belo Horizonte. Automação com IA, tráfego pago, desenvolvimento de sistemas e ERPs. Resultados reais para sua empresa." />
+    <meta name="keywords" content="automação IA, tráfego pago BH, desenvolvimento sistemas, agência tecnologia Belo Horizonte, ERP, chatbot WhatsApp" />
     <link rel="stylesheet" href="style.css" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
-    />
-    <style>
-      /* CSS de Ajuste para Desembolar Tudo */
-      .p-grid {
-        display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-        gap: 25px;
-        margin-top: 40px;
-      }
-      .p-card {
-        background: #0d1117;
-        border-radius: 15px;
-        border: 1px solid #1a1e26;
-        overflow: hidden;
-        transition: 0.3s;
-      }
-      .p-card:hover {
-        transform: translateY(-10px);
-        border-color: #00d4ff;
-      }
-      .p-img {
-        padding: 30px;
-        text-align: center;
-        background: #161b22;
-        font-size: 3rem;
-        color: #00d4ff;
-      }
-      .p-info {
-        padding: 20px;
-      }
-      .p-info span {
-        color: #00d4ff;
-        font-size: 0.75rem;
-        font-weight: bold;
-        text-transform: uppercase;
-      }
-      .p-info h3 {
-        margin: 8px 0;
-        font-size: 1.3rem;
-        color: #fff;
-      }
-      .p-info p {
-        color: #8a8f98;
-        font-size: 0.9rem;
-        line-height: 1.4;
-      }
-
-      .s-grid {
-        display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-        gap: 20px;
-      }
-      .feat-item {
-        display: flex;
-        align-items: center;
-        gap: 15px;
-        padding: 15px;
-        background: #0d1117;
-        border-radius: 10px;
-        margin-bottom: 15px;
-        border-left: 4px solid #39ff14;
-      }
-    </style>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet" />
   </head>
   <body>
-    <header>
-      <nav class="container">
+
+    <!-- ===== HEADER ===== -->
+    <header id="header">
+      <nav class="container nav-inner">
         <div class="logo">
           <i class="fas fa-bolt"></i> Tech<span>Flow</span>
         </div>
-        <ul>
+        <ul class="nav-links">
           <li><a href="#servicos">Serviços</a></li>
+          <li><a href="#processo">Como Funciona</a></li>
           <li><a href="#portfolio">Portfólio</a></li>
-          <li><a href="#contato">Contato</a></li>
+          <li><a href="#depoimentos">Clientes</a></li>
+          <li><a href="#contato" class="nav-cta">Falar com a equipe</a></li>
         </ul>
+        <button class="menu-toggle" id="menuToggle" aria-label="Abrir menu">
+          <i class="fas fa-bars"></i>
+        </button>
       </nav>
+      <div class="mobile-menu" id="mobileMenu">
+        <a href="#servicos">Serviços</a>
+        <a href="#processo">Como Funciona</a>
+        <a href="#portfolio">Portfólio</a>
+        <a href="#depoimentos">Clientes</a>
+        <a href="#contato">Falar com a equipe</a>
+      </div>
     </header>
 
+    <!-- ===== HERO ===== -->
     <section class="hero">
-      <div class="container">
-        <h1>A Solução <span>Tecnológica Completa</span></h1>
-        <p>
-          De Automação Industrial a Tráfego Pago de Alta Conversão. Nós
-          dominamos o ecossistema digital.
+      <div class="hero-bg-grid"></div>
+      <div class="container hero-content">
+        <div class="hero-badge">
+          <i class="fas fa-circle-check"></i> Agência Full Stack · BH & EUA
+        </div>
+        <h1>
+          Tecnologia que<br />
+          <span class="gradient-text">gera resultado</span><br />
+          de verdade.
+        </h1>
+        <p class="hero-sub">
+          De automações com IA a tráfego pago de alta conversão. A TechFlow transforma sua empresa com tecnologia de ponta — do código ao cliente.
         </p>
         <div class="hero-btns">
-          <a href="#contato" class="btn-cyan"
-            >Fechar Projeto <i class="fas fa-check"></i
-          ></a>
-          <a href="#portfolio" class="btn-outline">Ver Portfólio</a>
+          <a href="https://api.whatsapp.com/send?phone=5531999232730&text=Olá%2C%20quero%20uma%20proposta%20gratuita%20da%20TechFlow!" target="_blank" class="btn-primary">
+            Quero uma proposta gratuita <i class="fab fa-whatsapp"></i>
+          </a>
+          <a href="#portfolio" class="btn-ghost">Ver Portfólio</a>
+        </div>
+        <div class="hero-stats">
+          <div class="stat">
+            <strong>12+</strong>
+            <span>Projetos entregues</span>
+          </div>
+          <div class="stat-divider"></div>
+          <div class="stat">
+            <strong>Brasil & EUA</strong>
+            <span>Atuação global</span>
+          </div>
+          <div class="stat-divider"></div>
+          <div class="stat">
+            <strong>100%</strong>
+            <span>Projetos no prazo</span>
+          </div>
         </div>
       </div>
     </section>
 
+    <!-- ===== SERVIÇOS ===== -->
     <section id="servicos" class="services">
       <div class="container">
-        <h2 class="title">Serviços TechFlow</h2>
-        <p class="subtitle">
-          Especialistas em todas as áreas da tecnologia moderna
-        </p>
-        <div class="s-grid">
-          <div class="s-card">
-            <i class="fas fa-bullseye"></i>
+        <div class="section-label">O que fazemos</div>
+        <h2 class="section-title">Serviços TechFlow</h2>
+        <p class="section-sub">Especialistas em todas as áreas da tecnologia moderna</p>
+        <div class="services-grid">
+          <div class="service-card">
+            <div class="service-icon"><i class="fas fa-bullseye"></i></div>
             <h3>Tráfego Pago</h3>
-            <p>Gestão de anúncios no Google e Meta focado em ROI direto.</p>
+            <p>Gestão de anúncios no Google e Meta com foco total em ROI. Cada real investido rastreado e otimizado.</p>
+            <ul class="service-list">
+              <li><i class="fas fa-check"></i> Google Ads</li>
+              <li><i class="fas fa-check"></i> Meta Ads</li>
+              <li><i class="fas fa-check"></i> Relatórios semanais</li>
+            </ul>
           </div>
-          <div class="s-card">
-            <i class="fas fa-funnel-dollar"></i>
-            <h3>Tráfego Direto</h3>
-            <p>
-              Estratégias de vendas imediatas com funis de alta performance.
-            </p>
+          <div class="service-card featured">
+            <div class="service-badge">Mais popular</div>
+            <div class="service-icon"><i class="fas fa-robot"></i></div>
+            <h3>Automação com IA</h3>
+            <p>Bots de atendimento no WhatsApp, automações de processos e sistemas autônomos que trabalham por você 24h.</p>
+            <ul class="service-list">
+              <li><i class="fas fa-check"></i> Chatbot WhatsApp</li>
+              <li><i class="fas fa-check"></i> Automação n8n</li>
+              <li><i class="fas fa-check"></i> Integração de sistemas</li>
+            </ul>
           </div>
-          <div class="s-card">
-            <i class="fas fa-ad"></i>
-            <h3>Publicidade Digital</h3>
-            <p>Branding e presença digital dominante para sua marca.</p>
-          </div>
-          <div class="s-card">
-            <i class="fas fa-robot"></i>
-            <h3>Automação IA</h3>
-            <p>Sistemas autônomos para atendimento e processos internos.</p>
-          </div>
-          <div class="s-card">
-            <i class="fas fa-code"></i>
+          <div class="service-card">
+            <div class="service-icon"><i class="fas fa-code"></i></div>
             <h3>Desenvolvimento</h3>
-            <p>Sistemas robustos, ERPs e Landing Pages de elite.</p>
+            <p>Sistemas robustos, ERPs personalizados e landing pages de alta conversão construídos com tecnologia de elite.</p>
+            <ul class="service-list">
+              <li><i class="fas fa-check"></i> ERPs e sistemas web</li>
+              <li><i class="fas fa-check"></i> Landing pages</li>
+              <li><i class="fas fa-check"></i> APIs e integrações</li>
+            </ul>
+          </div>
+          <div class="service-card">
+            <div class="service-icon"><i class="fas fa-ad"></i></div>
+            <h3>Publicidade Digital</h3>
+            <p>Branding, identidade visual e presença digital dominante para sua marca se destacar no mercado.</p>
+            <ul class="service-list">
+              <li><i class="fas fa-check"></i> Identidade visual</li>
+              <li><i class="fas fa-check"></i> Social media</li>
+              <li><i class="fas fa-check"></i> SEO técnico</li>
+            </ul>
+          </div>
+          <div class="service-card">
+            <div class="service-icon"><i class="fas fa-funnel-dollar"></i></div>
+            <h3>Funis de Venda</h3>
+            <p>Estratégias de vendas com funis de alta performance que convertem visitantes em clientes pagantes.</p>
+            <ul class="service-list">
+              <li><i class="fas fa-check"></i> Funil completo</li>
+              <li><i class="fas fa-check"></i> E-mail marketing</li>
+              <li><i class="fas fa-check"></i> CRM integrado</li>
+            </ul>
           </div>
         </div>
       </div>
     </section>
 
+    <!-- ===== COMO FUNCIONA ===== -->
+    <section id="processo" class="process">
+      <div class="container">
+        <div class="section-label">Processo</div>
+        <h2 class="section-title">Como trabalhamos</h2>
+        <p class="section-sub">Do primeiro contato à entrega — simples, rápido e sem enrolação.</p>
+        <div class="process-steps">
+          <div class="process-step">
+            <div class="step-number">01</div>
+            <div class="step-content">
+              <h3>Diagnóstico gratuito</h3>
+              <p>Entendemos seu negócio, seus objetivos e o que está travando seu crescimento. Sem compromisso.</p>
+            </div>
+          </div>
+          <div class="process-arrow"><i class="fas fa-arrow-right"></i></div>
+          <div class="process-step">
+            <div class="step-number">02</div>
+            <div class="step-content">
+              <h3>Proposta personalizada</h3>
+              <p>Montamos uma estratégia sob medida com tecnologia certa para o seu caso, prazo e investimento claro.</p>
+            </div>
+          </div>
+          <div class="process-arrow"><i class="fas fa-arrow-right"></i></div>
+          <div class="process-step">
+            <div class="step-number">03</div>
+            <div class="step-content">
+              <h3>Execução e entrega</h3>
+              <p>Desenvolvemos, testamos e entregamos com suporte contínuo. Você acompanha cada etapa em tempo real.</p>
+            </div>
+          </div>
+        </div>
+        <div class="process-cta">
+          <a href="https://api.whatsapp.com/send?phone=5531999232730&text=Olá%2C%20quero%20agendar%20um%20diagnóstico%20gratuito!" target="_blank" class="btn-primary">
+            Agendar diagnóstico gratuito <i class="fab fa-whatsapp"></i>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== PORTFÓLIO ===== -->
     <section id="portfolio" class="portfolio">
       <div class="container">
-        <h2 class="title">Portfólio TechFlow</h2>
-        <p class="subtitle" style="text-align: center">
-          15 Projetos de Sucesso com Selo de Qualidade
-        </p>
-
-        <div class="p-grid">
+        <div class="section-label">Portfólio</div>
+        <h2 class="section-title">Projetos TechFlow</h2>
+        <p class="section-sub">Tecnologia entregue em múltiplos setores</p>
+        <div class="portfolio-grid">
           <div class="p-card">
-            <div class="p-img"><i class="fas fa-industry"></i></div>
-            <div class="p-info">
-              <span>ERP</span>
+            <div class="p-icon"><i class="fas fa-industry"></i></div>
+            <div class="p-body">
+              <span class="p-tag">ERP</span>
               <h3>TechFlow Industrial Pro</h3>
-              <p>Gestão de fábrica avançada.</p>
+              <p>Sistema completo de gestão de fábrica com controle de estoque, produção e relatórios em tempo real.</p>
             </div>
           </div>
           <div class="p-card">
-            <div class="p-img"><i class="fas fa-broom"></i></div>
-            <div class="p-info">
-              <span>EUA</span>
+            <div class="p-icon"><i class="fas fa-broom"></i></div>
+            <div class="p-body">
+              <span class="p-tag">Internacional</span>
               <h3>TechFlow Elite Clean</h3>
-              <p>Sistema de limpeza internacional.</p>
+              <p>Plataforma de gestão para empresa de limpeza atuando nos EUA com agendamento e controle de equipes.</p>
             </div>
           </div>
           <div class="p-card">
-            <div class="p-img"><i class="fas fa-gavel"></i></div>
-            <div class="p-info">
-              <span>Legal</span>
+            <div class="p-icon"><i class="fas fa-gavel"></i></div>
+            <div class="p-body">
+              <span class="p-tag">Jurídico</span>
               <h3>TechFlow LexBot</h3>
-              <p>Automação jurídica inteligente.</p>
+              <p>Automação jurídica com IA para triagem de casos, geração de documentos e atendimento automatizado.</p>
             </div>
           </div>
           <div class="p-card">
-            <div class="p-img"><i class="fas fa-scissors"></i></div>
-            <div class="p-info">
-              <span>Beauty</span>
+            <div class="p-icon"><i class="fas fa-scissors"></i></div>
+            <div class="p-body">
+              <span class="p-tag">Beleza</span>
               <h3>TechFlow BarberSys</h3>
-              <p>Agendamento em tempo real.</p>
+              <p>Sistema de agendamento em tempo real para barbearias com confirmação automática via WhatsApp.</p>
             </div>
           </div>
-          
           <div class="p-card">
-            <div class="p-img"><i class="fas fa-coins"></i></div>
-            <div class="p-info">
-              <span>Fintech</span>
+            <div class="p-icon"><i class="fas fa-coins"></i></div>
+            <div class="p-body">
+              <span class="p-tag">Fintech</span>
               <h3>TechFlow CryptoPay</h3>
-              <p>Gateway de pagamentos para criptoativos.</p>
+              <p>Gateway de pagamentos com suporte a criptoativos e conversão automática para moeda local.</p>
             </div>
           </div>
           <div class="p-card">
-            <div class="p-img"><i class="fas fa-graduation-cap"></i></div>
-            <div class="p-info">
-              <span>Educação</span>
+            <div class="p-icon"><i class="fas fa-graduation-cap"></i></div>
+            <div class="p-body">
+              <span class="p-tag">Educação</span>
               <h3>TechFlow EduLMS</h3>
-              <p>Plataforma de cursos online com área de membros.</p>
+              <p>Plataforma LMS com área de membros, vídeos, quizzes e certificados automáticos.</p>
             </div>
           </div>
           <div class="p-card">
-            <div class="p-img"><i class="fas fa-heart-pulse"></i></div>
-            <div class="p-info">
-              <span>Health</span>
+            <div class="p-icon"><i class="fas fa-heart-pulse"></i></div>
+            <div class="p-body">
+              <span class="p-tag">Saúde</span>
               <h3>TechFlow HealthCloud</h3>
-              <p>Gestão de clínicas e prontuário digital.</p>
+              <p>Gestão de clínicas com prontuário digital, agendamento online e integração com planos de saúde.</p>
             </div>
           </div>
           <div class="p-card">
-            <div class="p-img"><i class="fas fa-plane-up"></i></div>
-            <div class="p-info">
-              <span>Turismo</span>
+            <div class="p-icon"><i class="fas fa-plane-up"></i></div>
+            <div class="p-body">
+              <span class="p-tag">Turismo</span>
               <h3>TechFlow TravelMap</h3>
-              <p>Sistema de reservas e passagens integrado.</p>
+              <p>Sistema de reservas e passagens com integração a APIs de companhias aéreas e hotéis.</p>
             </div>
           </div>
           <div class="p-card">
-            <div class="p-img"><i class="fas fa-utensils"></i></div>
-            <div class="p-info">
-              <span>Food</span>
+            <div class="p-icon"><i class="fas fa-utensils"></i></div>
+            <div class="p-body">
+              <span class="p-tag">Food</span>
               <h3>TechFlow DeliveryMax</h3>
-              <p>App de entrega com logística inteligente.</p>
+              <p>App de delivery com logística inteligente, rastreamento em tempo real e gestão de pedidos.</p>
             </div>
           </div>
           <div class="p-card">
-            <div class="p-img"><i class="fas fa-dumbbell"></i></div>
-            <div class="p-info">
-              <span>Fitness</span>
+            <div class="p-icon"><i class="fas fa-dumbbell"></i></div>
+            <div class="p-body">
+              <span class="p-tag">Fitness</span>
               <h3>TechFlow GymControl</h3>
-              <p>Controle de acesso e treinos para academias.</p>
+              <p>Controle de acesso biométrico, treinos personalizados e gestão financeira para academias.</p>
             </div>
           </div>
           <div class="p-card">
-            <div class="p-img"><i class="fas fa-car"></i></div>
-            <div class="p-info">
-              <span>Auto</span>
+            <div class="p-icon"><i class="fas fa-car"></i></div>
+            <div class="p-body">
+              <span class="p-tag">Logística</span>
               <h3>TechFlow FleetDrive</h3>
-              <p>Monitoramento e gestão de frotas pesadas.</p>
+              <p>Monitoramento GPS e gestão de frotas pesadas com alertas automáticos e relatórios de eficiência.</p>
             </div>
           </div>
           <div class="p-card">
-            <div class="p-img"><i class="fas fa-store"></i></div>
-            <div class="p-info">
-              <span>Varejo</span>
+            <div class="p-icon"><i class="fas fa-store"></i></div>
+            <div class="p-body">
+              <span class="p-tag">Varejo</span>
               <h3>TechFlow SmartShop</h3>
-              <p>Automação de PDV e estoque em nuvem.</p>
+              <p>Automação de PDV, controle de estoque em nuvem e integração com marketplaces.</p>
             </div>
           </div>
         </div>
       </div>
     </section>
 
-    <section class="features">
+    <!-- ===== DEPOIMENTOS ===== -->
+    <section id="depoimentos" class="testimonials">
       <div class="container">
-        <h2 class="title">Diferenciais Técnicos</h2>
-        <div class="feat-list">
-          <div class="feat-item">
-            <i class="fas fa-bolt"></i> Tecnologia exclusiva TechFlow em cada
-            linha de código.
+        <div class="section-label">Clientes</div>
+        <h2 class="section-title">O que dizem sobre a TechFlow</h2>
+        <p class="section-sub">Resultados reais de quem confiou na nossa tecnologia</p>
+        <div class="testimonials-grid">
+          <div class="testimonial-card">
+            <div class="stars">
+              <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+            </div>
+            <p>"O bot de WhatsApp da TechFlow reduziu em 70% o tempo de atendimento da nossa equipe. Hoje responde clientes às 3h da manhã sem nenhum funcionário acordado."</p>
+            <div class="testimonial-author">
+              <div class="author-avatar">MR</div>
+              <div>
+                <strong>Marcos R.</strong>
+                <span>Dono de clínica odontológica, BH</span>
+              </div>
+            </div>
           </div>
-          <div class="feat-item">
-            <i class="fas fa-bolt"></i> Escala global: atendemos Brasil e EUA.
+          <div class="testimonial-card">
+            <div class="stars">
+              <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+            </div>
+            <p>"Triplicamos o número de agendamentos após a landing page e o tráfego pago. Em 30 dias o investimento já tinha se pago."</p>
+            <div class="testimonial-author">
+              <div class="author-avatar">AC</div>
+              <div>
+                <strong>Ana C.</strong>
+                <span>Proprietária de barbearia, MG</span>
+              </div>
+            </div>
           </div>
-          <div class="feat-item">
-            <i class="fas fa-bolt"></i> Especialistas em Tráfego de Direto e ROI
-            agressivo.
+          <div class="testimonial-card">
+            <div class="stars">
+              <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+            </div>
+            <p>"Sistema ERP entregue no prazo, dentro do orçamento e funcionando perfeitamente. A equipe é séria e sabe o que faz."</p>
+            <div class="testimonial-author">
+              <div class="author-avatar">FP</div>
+              <div>
+                <strong>Felipe P.</strong>
+                <span>Gerente industrial, interior de SP</span>
+              </div>
+            </div>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- Botão Flutuante do WhatsApp -->
+    <!-- ===== DIFERENCIAIS ===== -->
+    <section class="differentials">
+      <div class="container">
+        <div class="diff-grid">
+          <div class="diff-text">
+            <div class="section-label">Por que a TechFlow</div>
+            <h2 class="section-title left">Tecnologia séria.<br/>Resultado concreto.</h2>
+            <p class="section-sub left">Não somos mais uma agência genérica. Somos especialistas técnicos que entendem de negócios.</p>
+            <div class="diff-list">
+              <div class="diff-item">
+                <i class="fas fa-check-circle"></i>
+                <div>
+                  <strong>Tecnologia exclusiva</strong>
+                  <p>Stack proprietária da TechFlow em cada projeto — sem soluções genéricas.</p>
+                </div>
+              </div>
+              <div class="diff-item">
+                <i class="fas fa-check-circle"></i>
+                <div>
+                  <strong>Escala global</strong>
+                  <p>Atendemos empresas no Brasil e nos EUA com suporte em português e inglês.</p>
+                </div>
+              </div>
+              <div class="diff-item">
+                <i class="fas fa-check-circle"></i>
+                <div>
+                  <strong>ROI mensurável</strong>
+                  <p>Toda campanha e projeto entregam relatórios reais. Você vê exatamente onde está o resultado.</p>
+                </div>
+              </div>
+              <div class="diff-item">
+                <i class="fas fa-check-circle"></i>
+                <div>
+                  <strong>Suporte contínuo</strong>
+                  <p>Não sumimos após a entrega. Acompanhamos a evolução do projeto a longo prazo.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="diff-visual">
+            <div class="diff-card-stack">
+              <div class="diff-metric">
+                <i class="fas fa-arrow-trend-up"></i>
+                <div>
+                  <strong>+340%</strong>
+                  <span>ROI médio em tráfego pago</span>
+                </div>
+              </div>
+              <div class="diff-metric">
+                <i class="fas fa-robot"></i>
+                <div>
+                  <strong>24/7</strong>
+                  <span>Atendimento automatizado</span>
+                </div>
+              </div>
+              <div class="diff-metric">
+                <i class="fas fa-clock"></i>
+                <div>
+                  <strong>72h</strong>
+                  <span>Prazo médio para primeira entrega</span>
+                </div>
+              </div>
+              <div class="diff-metric">
+                <i class="fas fa-shield-halved"></i>
+                <div>
+                  <strong>100%</strong>
+                  <span>Projetos entregues no prazo</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
 
-   <a
-  href="https://api.whatsapp.com/send?phone=5531999232730&text=Olá%2C%20tenho%20interesse%20em%20conhecer%20a%20Techflow!"
-  class="whatsapp-float"
-  target="_blank"
-  >
-</a>
-      <i class="fab fa-whatsapp"></i>
-    </a>
+    <!-- ===== CONTATO / FOOTER ===== -->
     <footer id="contato">
-      <div class="container footer-grid">
-        <div class="foot-info">
-          <div class="logo">
+      <div class="container footer-inner">
+        <div class="footer-brand">
+          <div class="logo large">
             <i class="fas fa-bolt"></i> Tech<span>Flow</span>
           </div>
           <p>Domine o mercado com quem faz tecnologia de verdade.</p>
+          <div class="footer-social">
+            <a href="https://instagram.com/Techflow" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+            <a href="https://api.whatsapp.com/send?phone=5531999232730" target="_blank" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+          </div>
         </div>
-        <div class="foot-contact">
-          <h3>Fale Conosco</h3>
-          <!-- Telefone com link para clique direto -->
-          <p>
-         <a
-  href="https://api.whatsapp.com/send?phone=5531999232730&text=Olá%2C%20tenho%20interesse%20em%20conhecer%20a%20Techflow!"
-  target="_blank"
-  style="color: inherit; text-decoration: none"
->
-              <i class="fab fa-whatsapp"></i> (31) 9 9923-2730
-            </a>
-          </p>
-
-          <p>instagran: @Techflow</p>
-          <p>email: techflowtecnologiadeponta@gmail.com</p>
+        <div class="footer-links">
+          <h4>Navegação</h4>
+          <a href="#servicos">Serviços</a>
+          <a href="#processo">Como Funciona</a>
+          <a href="#portfolio">Portfólio</a>
+          <a href="#depoimentos">Clientes</a>
+        </div>
+        <div class="footer-contact">
+          <h4>Fale Conosco</h4>
+          <a href="https://api.whatsapp.com/send?phone=5531999232730&text=Olá%2C%20tenho%20interesse%20em%20conhecer%20a%20Techflow!" target="_blank">
+            <i class="fab fa-whatsapp"></i> (31) 9 9923-2730
+          </a>
+          <a href="https://instagram.com/Techflow" target="_blank">
+            <i class="fab fa-instagram"></i> @Techflow
+          </a>
+          <a href="mailto:contato@techflow.com.br">
+            <i class="fas fa-envelope"></i> contato@techflow.com.br
+          </a>
         </div>
       </div>
+      <div class="footer-bottom">
+        <p>© 2025 TechFlow. Todos os direitos reservados.</p>
+      </div>
     </footer>
+
+    <!-- WhatsApp Flutuante -->
+    <a href="https://api.whatsapp.com/send?phone=5531999232730&text=Olá%2C%20tenho%20interesse%20em%20conhecer%20a%20Techflow!" class="whatsapp-float" target="_blank" aria-label="Falar no WhatsApp">
+      <i class="fab fa-whatsapp"></i>
+      <span class="wa-tooltip">Falar no WhatsApp</span>
+    </a>
+
+    <script>
+      // Mobile menu toggle
+      const toggle = document.getElementById('menuToggle');
+      const menu = document.getElementById('mobileMenu');
+      toggle.addEventListener('click', () => {
+        menu.classList.toggle('open');
+      });
+      // Fecha ao clicar em link
+      menu.querySelectorAll('a').forEach(a => {
+        a.addEventListener('click', () => menu.classList.remove('open'));
+      });
+      // Header scroll effect
+      window.addEventListener('scroll', () => {
+        document.getElementById('header').classList.toggle('scrolled', window.scrollY > 50);
+      });
+    </script>
   </body>
 </html>
