@@ -1769,3 +1769,27 @@ footer {
 /* ===== LINKS SERVIÇOS -> PLANOS ===== */
 .price-card { scroll-margin-top: 110px; }
 .price-card:target { border-color: var(--cyan); box-shadow: 0 0 0 1px var(--cyan), 0 16px 48px rgba(0, 212, 255, 0.18); }
+
+/* ===== PLANO SaaS + CARD CENTRAL ===== */
+.price-value--text { font-size: 1.7rem; line-height: 1.2; }
+@media (min-width: 1025px) {
+  .saas-grid > .saas-card:last-child:nth-child(odd) {
+    grid-column: 1 / -1;
+    justify-self: center;
+    width: calc(50% - 10px);
+  }
+}
+
+/* ===== TABLET / DESKTOP NO CELULAR (2 colunas): centraliza o card sozinho ===== */
+@media (min-width: 769px) and (max-width: 1024px) {
+  .pricing-grid > .price-card:last-child:nth-child(odd) {
+    grid-column: 1 / -1;
+    justify-self: center;
+    width: calc(50% - 10px);
+  }
+  .testimonials-grid > .testimonial-card:last-child:nth-child(odd) {
+    grid-column: 1 / -1;
+    justify-self: center;
+    width: calc(50% - 8px);
+  }
+}
